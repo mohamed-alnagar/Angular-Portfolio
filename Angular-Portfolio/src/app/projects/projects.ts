@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-projects',
   standalone: true,
@@ -12,7 +13,7 @@ export class ProjectsComponent {
     {
       title: 'Hotel Management System',
       desc: 'A full-featured hotel system with room booking, billing, and client feedback.',
-      image: 'assets/images/hotel.png'
+      image: 'assets/images/hotel.jpg'
     },
     {
       title: 'Lost & Found Application',
@@ -22,15 +23,14 @@ export class ProjectsComponent {
     {
       title: 'Campaings Website',
       desc: 'Built using HTML , CSS , JS and Json.',
-      image: 'assets/images/camp.png'
+      image: 'assets/images/college.jpg'
     },
      {
       title: 'ICT Planning for Green Hospital',
       desc: 'including Hardware - Software [Arduio , C , Wersite [HTML , CSS ,JS]].',
-      image: 'assets/images/image.png'
+      image: 'assets/images/college.jpg'
     },
 
   ];
 }
-export class Projects {
-}
+export class Projects { }

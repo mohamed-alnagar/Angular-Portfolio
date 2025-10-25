@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+
 import { HeroComponent } from './hero/hero';
 import { AboutComponent } from './about/about';
 import { SkillsComponent } from './skills/skills';
@@ -17,7 +18,7 @@ import { FooterComponent } from './footer/footer';
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent,
+    FooterComponent
   ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
