@@ -1,12 +1,28 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+
+import { HeroComponent } from './hero/hero';
+import { AboutComponent } from './about/about';
+import { SkillsComponent } from './skills/skills';
+import { ProjectsComponent } from './projects/projects';
+import { FooterComponent } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    HeroComponent,
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    FooterComponent
+  ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('my-app');
+export class AppComponent {
+  title = 'my-app';
 }
